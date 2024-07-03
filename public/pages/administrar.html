@@ -81,7 +81,7 @@
                 <th>Titulo</th>
                 <th>Fecha Estreno</th>
                 <th>Genero</th>
-                <th>Imagen</th>
+                <!--<th>Imagen</th>-->
               </tr>
             </thead>
             <tbody>
@@ -112,10 +112,10 @@
           <div class="error-text"></div>
         </div>
 
-        <div>
+        <!--<div>
           <input type="file"  id="imagenAgreg" name="imagenAgreg" />
           <div class="error-text"></div>
-        </div>
+        </div>-->
         <div>
           <select id="generoAgreg" name="generoAgreg"></select>
 
@@ -138,7 +138,7 @@
         if (jsonResponse.body && Array.isArray(jsonResponse.body)) {
             const generos = jsonResponse.body;
             const selectGenero = document.getElementById('generoAgreg');
-
+            
             generos.forEach(genero => {
                 const option = document.createElement('option');
                 option.value = genero.id;  // Asume que el objeto genero tiene una propiedad 'id'
@@ -181,10 +181,11 @@
         <div>
           <input type="text" placeholder="Genero" id="generoActuali" name="generoActuali" />
           <div class="error-text"></div>
-        </div><div>
+        </div>
+        <!--<div>
           <input type="text" placeholder="Imagen" id="imagenActuali" name="imagenActuali" />
           <div class="error-text"></div>
-        </div>
+        </div>-->
 
 
         <div>
@@ -211,10 +212,10 @@
           <div class="error-text"></div>
         </div>
 
-        <div>
+        <!--<div>
           <input type="text" placeholder="Imagen" id="imagenElim" name="imagenElim" />
           <div class="error-text"></div>
-        </div>
+        </div>-->
         <div>
           <input type="text" placeholder="Genero" id="generoElim" name="generoElim" />
           <div class="error-text"></div>

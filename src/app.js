@@ -26,7 +26,7 @@ var corsOptions = {
 
 
 //Utilización de Middlewares
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '..','public')));
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
