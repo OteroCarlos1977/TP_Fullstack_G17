@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             password: dataForm.get('password'),
             
         }
+        
 
         try {
             const respuesta = await fetch('/api/auth/login', {
@@ -22,8 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             });
 
+            
+
             const respuestaJson = await respuesta.json();    
-            console.log(respuestaJson);
+            
 
             if (data.usuario === "admin" && respuestaJson.error === false) {
                 alert("Bienvenido administrador");
