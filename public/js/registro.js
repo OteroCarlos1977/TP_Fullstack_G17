@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rol_id: 2
         }
 
-        const respuesta = await fetch('/api/usuarios', {
+        const respuesta = await fetch('https://tp-fullstack-g17.vercel.app/api/usuarios', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

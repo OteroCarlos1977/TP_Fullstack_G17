@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
 
         try {
-            const respuesta = await fetch('/api/auth/login', {
+            const respuesta = await fetch('https://tp-fullstack-g17.vercel.app/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
