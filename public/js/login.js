@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
             password: dataForm.get('password'),
             
         }
+
+        console.log(data);
         
 
         try {

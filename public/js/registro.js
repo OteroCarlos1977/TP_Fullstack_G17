@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rol_id: 2
         }
 
-        const respuesta = await fetch('http://localhost:3000/api/usuarios', {
+        const respuesta = await fetch('/api/usuarios', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
