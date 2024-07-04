@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         const dataForm = new FormData(login);
         const data = {
-            usuario: dataForm.get('usaurio'),
+            usuario: dataForm.get('usuario'),
             password: dataForm.get('password'),
             
         }
